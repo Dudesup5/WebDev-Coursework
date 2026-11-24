@@ -1,9 +1,0 @@
-Draft - review and edit before submission
-
-I used ChatGPT and GitHub Copilot to assist with revising the website content
-and layout, improving the HTML and CSS, and preparing a CV draft tailored to
-the selected software development internship advert. I reviewed and edited
-AI-generated suggestions before using them and am responsible for checking
-that the final portfolio and CV accurately reflect my own work, skills and
-experience. Confirm and adjust this statement to describe your actual review
-before submission.
