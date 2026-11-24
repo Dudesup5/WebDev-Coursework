@@ -1,45 +1,106 @@
+:root {
+  color-scheme: light;
+  --portfolio-ink: #17243a;
+  --portfolio-muted: #596579;
+  --portfolio-surface: #ffffff;
+  --portfolio-page: #f5f7fb;
+  --portfolio-border: #e2e8f0;
+  --portfolio-accent: #3563d9;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  line-height: 1.6;
+  background: var(--portfolio-page);
+  color: var(--portfolio-ink);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
 header {
-  background: #222;
-  padding: 1rem;
+  background: var(--portfolio-ink);
 }
 
-.nav {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
+header .navbar.bg-dark {
+  background-color: var(--portfolio-ink) !important;
 }
 
-.nav a {
-  color: white;
-  text-decoration: none;
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.navbar .nav-link {
+  transition: color 160ms ease;
+}
+
+.navbar .nav-link.active {
+  color: #ffffff;
+  font-weight: 600;
 }
 
 main {
-  padding: 1rem;
+  flex: 1;
+  padding: 1rem 0;
 }
 
-footer {
-  background: #f4f4f4;
-  text-align: center;
-  padding: 1rem;
+main h1,
+main h2,
+main h3,
+.card-title {
+  color: var(--portfolio-ink);
+  letter-spacing: -0.025em;
 }
 
-.portfolio-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+main .lead,
+main .text-secondary,
+main .text-muted {
+  color: var(--portfolio-muted) !important;
 }
 
 .card {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  flex: 1 1 250px;
+  overflow: hidden;
+  border: 1px solid var(--portfolio-border);
+  border-radius: 1rem;
+  background: var(--portfolio-surface);
+  box-shadow: 0 0.35rem 1.25rem rgb(23 36 58 / 6%) !important;
+}
+
+.btn {
+  border-radius: 0.65rem;
+  font-weight: 600;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--portfolio-accent);
+  outline-offset: 3px;
+}
+
+footer {
+  background: var(--portfolio-ink);
+  color: #e2e8f0;
+  padding: 1.25rem 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

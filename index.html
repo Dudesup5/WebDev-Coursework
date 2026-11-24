@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
   <link
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
   rel="stylesheet">
  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | My Portfolio</title>
+  <title>Findlay Stewart | Software Developer Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="index.html">My Portfolio</a>
+    <a class="navbar-brand" href="index.html">Findlay Stewart</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="mainNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
         <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/Dudesup5" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/findlay-stewart-84250532b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li class="nav-item"><a class="nav-link" href="Findlay-Stewart-Amazon-SDE-Intern-CV.pdf" download>CV</a></li>
       </ul>
     </div>
   </div>
@@ -32,11 +37,176 @@
   </header>
 
   <main>
-    <section>
-      <h1>Welcome to My Portfolio</h1>
-      <p>This website showcases my work for the Front End Web Development module.</p>
-      <p>Use the navigation to learn more about me and view my projects.</p>
+    <section class="container py-5 text-center">
+      <h1 class="display-3 fw-bold">Findlay Stewart</h1>
+      <p class="lead text-secondary">Computer Science Student at the University of Dundee</p>
+      <p class="mx-auto" style="max-width: 700px;">
+        I am an aspiring software developer with interests in artificial intelligence,
+        web development and problem solving. I enjoy building software that is
+        practical, user-focused and well designed, while continually expanding my
+        programming knowledge through university coursework and personal projects.
+      </p>
+      <div class="mt-4">
+        <a href="portfolio.html" class="btn btn-primary btn-lg me-2">View My Projects</a>
+        <a href="Findlay-Stewart-Amazon-SDE-Intern-CV.pdf" class="btn btn-outline-dark btn-lg" download>
+          Download CV
+        </a>
+      </div>
+    </section>
 
+    <section class="container py-5" aria-labelledby="technical-skills-heading">
+      <h2 id="technical-skills-heading" class="text-center mb-3">Technical Skills</h2>
+      <p class="text-secondary text-center mb-5">
+        Examples of how I am applying and developing these skills are included in my project write-ups.
+      </p>
+      <div class="row text-center">
+        <div class="col-md-3 mb-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h4">Programming</h3>
+              <p>Java<br>Python<br>HTML<br>CSS</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h4">Web</h3>
+              <p>Bootstrap<br>Responsive Design<br>GitHub Pages</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h4">Tools</h3>
+              <p>Git<br>GitHub<br>VS Code<br>Eclipse</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h4">Interests</h3>
+              <p>Artificial Intelligence<br>Software Engineering<br>Web Development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container py-5" aria-labelledby="featured-projects-heading">
+      <h2 id="featured-projects-heading" class="text-center mb-5">Featured Projects</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h3 class="h5">Ultimate Tic Tac Toe AI</h3>
+              <p>
+                Developing an artificial intelligence capable of playing
+                Ultimate Tic Tac Toe using Monte Carlo Tree Search and
+                machine learning techniques.
+              </p>
+              <span class="badge bg-primary">Python</span>
+              <span class="badge bg-secondary">AI</span>
+              <span class="badge bg-dark">Machine Learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h3 class="h5">DeafLinks Website</h3>
+              <p>
+                Working within a development team to redesign the DeafLinks
+                charity website through client meetings, planning and
+                accessible web design.
+              </p>
+              <span class="badge bg-primary">HTML</span>
+              <span class="badge bg-primary">CSS</span>
+              <span class="badge bg-success">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <h3 class="h5">Portfolio Website</h3>
+              <p>
+                A responsive personal portfolio showcasing technical
+                projects, programming experience and professional skills.
+              </p>
+              <span class="badge bg-primary">HTML</span>
+              <span class="badge bg-primary">CSS</span>
+              <span class="badge bg-success">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5" aria-labelledby="transferable-skills-heading">
+      <h2 id="transferable-skills-heading" class="text-center mb-3">Transferable Skills</h2>
+      <p class="text-secondary text-center mb-5">
+        I have developed these skills through collaborative projects and outdoor instruction.
+      </p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="card h-100">
+            <div class="card-body">
+              <h3 class="h5">Teamwork and planning</h3>
+              <p>
+                In the three-person DeafLinks redesign team, I take part in client
+                meetings, help establish requirements and contribute to early
+                project planning and a prototype landing page.
+              </p>
+              <a href="portfolio.html" class="btn btn-sm btn-outline-primary">DeafLinks project</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card h-100">
+            <div class="card-body">
+              <h3 class="h5">Communication and leadership</h3>
+              <p>
+                As a volunteer instructor, I delivered outdoor activities for
+                young people and sometimes led coasteering groups, explaining
+                suitable routes for the conditions.
+              </p>
+              <a href="about.html" class="btn btn-sm btn-outline-primary">More about my experience</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card h-100">
+            <div class="card-body">
+              <h3 class="h5">Judgement and problem-solving</h3>
+              <p>
+                During outdoor activities I learned to adapt decisions to
+                changing conditions and seek guidance from an experienced
+                instructor when appropriate.
+              </p>
+              <a href="about.html" class="btn btn-sm btn-outline-primary">How I approach challenges</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h2>About Me</h2>
+          <p>
+            Alongside studying Computer Science at the University of Dundee,
+            I have gained experience in software development, teamwork and
+            client communication through university projects and voluntary work.
+            My experience as a climbing instructor has also strengthened my
+            leadership, communication and problem-solving abilities.
+          </p>
+          <a href="about.html" class="btn btn-outline-primary">Learn More About Me</a>
+        </div>
+      </div>
     </section>
   </main>
 

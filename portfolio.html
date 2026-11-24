@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
   <link
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
   rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | My Portfolio</title>
+  <title>Portfolio | Findlay Stewart</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="index.html">My Portfolio</a>
+    <a class="navbar-brand" href="index.html">Findlay Stewart</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -22,7 +24,10 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="portfolio.html" aria-current="page">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://github.com/Dudesup5" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/findlay-stewart-84250532b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li class="nav-item"><a class="nav-link" href="Findlay-Stewart-Amazon-SDE-Intern-CV.pdf" download>CV</a></li>
       </ul>
     </div>
   </div>
@@ -30,29 +35,136 @@
 
   </header>
 
-  <main>
-  <section>
-    <h1>My Work</h1>
-    <p>Some example projects.</p>
-  </section>
+  <main class="container my-5">
+    <section class="mb-5">
+      <p class="text-primary fw-semibold mb-2">SELECTED WORK</p>
+      <h1 class="display-5 fw-bold">Projects</h1>
+      <p class="lead text-secondary">
+        A selection of projects exploring artificial intelligence, accessible
+        web design and front-end development.
+      </p>
+    </section>
 
-  <section class="portfolio-grid">
-    <article class="card">
-      <h2>Project One</h2>
-      <p>A simple HTML and CSS website.</p>
-    </article>
+    <section class="d-grid gap-4" aria-label="Project details">
+      <article class="card shadow-sm">
+        <div class="card-body p-4 p-md-5">
+          <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+            <h2 class="h3 card-title mb-0">Ultimate Tic Tac Toe AI</h2>
+            <span class="badge text-bg-info">In development</span>
+          </div>
+          <p class="text-secondary">Artificial intelligence · Search algorithms</p>
+          <p>
+            An ongoing project exploring how an AI can play Ultimate Tic Tac
+            Toe. The work focuses on Monte Carlo Tree Search (MCTS) and neural
+            network techniques to investigate how an agent can evaluate
+            possible moves in a more complex version of the game.
+          </p>
+          <h3 class="h5 mt-4">My role</h3>
+          <p>
+            This is an individual project in progress. I am exploring the
+            problem and investigating possible AI approaches rather than
+            presenting it as a finished system.
+          </p>
+          <h3 class="h5 mt-4">Areas of focus</h3>
+          <ul>
+            <li>Applying search algorithms to game-playing problems.</li>
+            <li>Exploring MCTS and neural network approaches.</li>
+            <li>Building knowledge of Python and machine learning concepts.</li>
+            <li>Learning to break a complex decision problem into smaller steps.</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2 mt-4" aria-label="Technologies and topics">
+            <span class="badge text-bg-primary">Python</span>
+            <span class="badge text-bg-secondary">MCTS</span>
+            <span class="badge text-bg-secondary">Neural Networks</span>
+            <span class="badge text-bg-dark">Machine Learning</span>
+          </div>
+        </div>
+      </article>
 
-    <article class="card">
-      <h2>Project Two</h2>
-      <p>A responsive layout.</p>
-    </article>
+      <article class="card shadow-sm">
+        <div class="card-body p-4 p-md-5">
+          <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+            <h2 class="h3 card-title mb-0">DeafLinks Website Redesign</h2>
+            <span class="badge text-bg-primary">Team project</span>
+          </div>
+          <p class="text-secondary">Web development · Accessibility · Collaboration</p>
+          <p>
+            A collaborative redesign project for the DeafLinks charity
+            website. The work involves contributing to planning and client
+            discussions, and considering how accessible web design can better
+            support the people who use the site.
+          </p>
+          <h3 class="h5 mt-4">My contribution</h3>
+          <p>
+            I work in a three-person team, take part in client meetings to
+            establish requirements, contribute to early planning and create a
+            prototype landing page.
+          </p>
+          <h3 class="h5 mt-4">Areas of focus</h3>
+          <ul>
+            <li>Translating client requirements into an initial page prototype.</li>
+            <li>Collaborating on planning and sharing work within a team.</li>
+            <li>Using HTML, CSS and Bootstrap to develop web pages.</li>
+            <li>Developing client communication and accessibility-aware design skills.</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2 mt-4" aria-label="Technologies and topics">
+            <span class="badge text-bg-primary">HTML</span>
+            <span class="badge text-bg-primary">CSS</span>
+            <span class="badge text-bg-success">Bootstrap</span>
+            <span class="badge text-bg-secondary">Accessibility</span>
+            <span class="badge text-bg-secondary">Teamwork</span>
+          </div>
+        </div>
+      </article>
 
-    <article class="card">
-      <h2>Project Three</h2>
-      <p>A multi-page portfolio site.</p>
-    </article>
-  </section>
-</main>
+      <article class="card shadow-sm">
+        <div class="card-body p-4 p-md-5">
+          <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3">
+            <h2 class="h3 card-title mb-0">Personal Portfolio Website</h2>
+            <span class="badge text-bg-primary">Personal project</span>
+          </div>
+          <p class="text-secondary">Front-end development · Responsive design</p>
+          <p>
+            This multi-page portfolio brings together an introduction, an
+            About page and selected project write-ups. It uses Bootstrap and
+            custom CSS to provide a consistent layout and navigation across
+            screen sizes.
+          </p>
+          <h3 class="h5 mt-4">My contribution</h3>
+          <p>
+            I designed and built the site, organised its content across three
+            pages and implemented the shared navigation, responsive Bootstrap
+            layouts and custom styling.
+          </p>
+          <h3 class="h5 mt-4">Areas of focus</h3>
+          <ul>
+            <li>Structuring pages with semantic HTML and clear navigation.</li>
+            <li>Using Bootstrap components and responsive layout utilities.</li>
+            <li>Writing custom CSS consistently across multiple pages.</li>
+            <li>Developing front-end and content-organisation skills.</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2 mt-4" aria-label="Technologies and topics">
+            <span class="badge text-bg-primary">HTML</span>
+            <span class="badge text-bg-primary">CSS</span>
+            <span class="badge text-bg-success">Bootstrap</span>
+            <span class="badge text-bg-secondary">Responsive Design</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="mt-5">
+      <div class="bg-light rounded p-4 p-md-5">
+        <h2 class="h3">More about me</h2>
+        <p class="mb-4">
+          These projects reflect my interests in software development,
+          problem-solving and building with users in mind.
+        </p>
+        <a href="about.html" class="btn btn-outline-primary">Read about my experience</a>
+      </div>
+    </section>
+  </main>
+
 
 
   <footer>
